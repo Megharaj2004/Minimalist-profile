@@ -73,5 +73,15 @@
     <footer>
         <span>Copyright &copy; 2024 <a class="minimalist" href="#">Minimalist</a>.</span>
     </footer>
+
+    <!-- If webpage is reloaded it redirects to index.html page  -->
+
+    <script>
+        window.onload = function(){
+            if(performance.navigation.type==1){
+                window.location.href ="index.html";
+            }
+        };
+    </script>
 </body>
 </html>
